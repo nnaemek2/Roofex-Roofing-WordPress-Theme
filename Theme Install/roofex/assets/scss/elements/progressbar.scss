@@ -1,0 +1,93 @@
+.pxl-progressbar-1 {
+    .pxl--progressbar {
+        height: 10px;
+        position: relative;
+        width: 0;
+        @include transition(width 1.4s ease);
+        @include background-horizontal($gradient_color_from, $gradient_color_to);
+        @include border-radius(10px);
+        top: 5px;
+    }
+    .pxl--holder {
+        background-color: #f4f4f4;
+        @include border-radius(10px);
+        height: 10px;
+    }
+    .pxl--percentage {
+        font-size: 15px;
+        font-weight: 500;
+        color: #382c4d;
+        @extend .ft-theme-default;
+    }
+    .pxl--title {
+        font-weight: 500;
+        font-size: 16px;
+        color: #382c4d;
+        flex-grow: 1;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .pxl--meta {
+        margin-bottom: 7px;
+    }
+    .pxl--item {
+        + .pxl--item {
+            margin-top: 28px;
+        }
+    }
+}
+
+.pxl-progressbar-2 {
+    .pxl-item--icon {
+        width: 46px;
+        height: 46px;
+        @include border-radius(46px);
+        @include background-gradient-rotate(60deg, $gradient_color_from, $gradient_color_to 50%);
+        font-size: 20px;
+        color: #fff;
+        min-width: 46px;
+        margin-top: 3px;
+        margin-right: 10px;
+    }
+    .pxl--progressbar {
+        height: 13px;
+        position: relative;
+        width: 0;
+        @include transition(width 1.4s ease);
+        @include background-gradient-rotate(60deg, $gradient_color_from, $gradient_color_to 50%);
+        @include border-radius(10px);
+    }
+    .pxl--holder {
+        background-color: rgba(#000, 0.13);
+        @include border-radius(10px);
+        height: 13px;
+    }
+    .pxl--percentage {
+        font-size: 18px;
+        font-weight: 500;
+        color: #382c4d;
+        @extend .ft-theme-default;
+    }
+    .pxl--title {
+        font-weight: 500;
+        font-size: 18px;
+        color: #382c4d;
+        flex-grow: 1;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .pxl--meta {
+        margin-bottom: 7px;
+    }
+    .pxl--item {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        .pxl--bottom {
+            flex-grow: 1;
+        }
+        + .pxl--item {
+            margin-top: 25px;
+        }
+    }
+}

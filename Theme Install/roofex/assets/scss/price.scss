@@ -1,0 +1,64 @@
+.pxl-pricing-carousel1 {
+	.pxl-swiper-dots  {
+		display: grid;
+		position: absolute;
+		top: 50%;
+		transform:translateY(-50%);
+		right: -41px;
+		margin-top: 0;
+		.pxl-swiper-pagination-bullet {
+			margin: 5px 0;
+			background-color: #f2f2f2;
+			&.swiper-pagination-bullet-active {
+				background-color: $primary_color; 
+			}
+		}
+	}
+	.swiper-container-vertical {
+		height: 440px ;
+		.pxl-swiper-wrapper {
+			flex-direction: column;
+		}
+		.pxl-swiper-slide {
+			transform: translateZ(0);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+	}
+	.pxl-swiper-slide {
+		padding-bottom: 30px;
+		.wrap-inner-content {
+			background-color: #f2f2f2;
+			text-align: center;
+			padding: 39px 0 36px 0;
+			.pxl-item--title {
+				font-size: 20px;
+				font-weight: 700;
+				color: #050505;
+				@extend .ft-theme-default;
+				margin-bottom: -5px;
+			}
+			.pxl-item--price {
+				margin-bottom: -2px;
+				.pxl-item--unit {
+					font-size: 24px;
+					font-weight: 700;
+					color: #050505;
+					@extend .ft-lato;
+				}
+				.pxl-item--pricing {
+					font-size: 48px;
+					font-weight: 700;
+					color: #050505;
+					@extend .ft-lato;
+				}
+			}
+			.pxl-item--desc {
+				font-size: 16px;
+				font-weight: 700;
+				color: #878787;
+				@extend .ft-lato;
+			}
+		}
+	}
+}

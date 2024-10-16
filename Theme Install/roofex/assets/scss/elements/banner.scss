@@ -1,0 +1,177 @@
+.pxl-banner1 {
+    position: relative;
+    overflow: hidden;
+    .pxl-item--title {
+        position: absolute;
+        height: 135px;
+        width: 270px;
+        background-color: $primary_color;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #fff;
+        border-bottom: 30px solid #fff;
+        padding: 31px 90px 0 90px;
+        top: -20px;
+        left: -88px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        transform: rotate(-45deg);
+    }
+}
+.pxl-banner2 {
+    position: relative;
+    .pxl-item--image {
+        img {
+            width: 100%;
+        }
+    }
+    .pxl-item--meta {
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 137px;
+        height: 137px;
+        border-radius: 100px 0 100px 100px;
+        background-color: $primary_color;
+        text-align: center;
+        .pxl-item--title {
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            color: #fff;
+            line-height: 22px;
+            .pxl--counter-number {
+                .pxl--counter-value {
+                    display: block;
+                    padding-top: 28px;
+                    padding-bottom: 11px;
+                    font-size: 36px ;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+            
+        }
+        
+    }
+}
+.pxl-banner4 {
+    .pxl-banner-inner {
+        position: relative;
+        padding-bottom: 13px;
+        .pxl-item--image2 {
+            position: absolute;
+            right: 26px;
+            bottom: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .pxl-item--meta {
+            padding-right: 20px;
+            left: 0;
+            bottom: 0px;
+            position: absolute;
+            width: 211px;
+            height: 187px;
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            align-items:center;
+            background-image: url(../img/bg-title-banner.png);
+            background-size: cover;
+            .pxl-item--title {
+                max-width: 160px;
+                margin: 0 auto;
+                font-size: 15px;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-rendering: optimizeLegibility;
+                font-weight: 700;
+                display: block;
+                color: #fff;
+                line-height: 20px;
+                .pxl--counter-number {
+                    position: relative;
+                    .pxl--counter-value {
+                        display: block;
+                        line-height: 64px;
+                        padding-bottom: 15px;
+                        font-size: 90px ;
+                        font-weight: 700;
+                        color: #fff;
+                    }
+                    .pxl--counter-suffix {
+                        font-size: 37px;
+                        position: absolute;
+                        right: 10px;
+                        font-weight: 700;
+                        top: 0;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+.pxl-bn-box2 {
+    .ct-banner-meta {
+        animation: pxl_spin 8s linear infinite;
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        z-index: 1;
+        @include border-radius(100%);
+        background-color: transparent;
+        border: 40px solid #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .ct-banner-title {
+        font-size: 19.5px;
+        white-space: nowrap;
+        color: #0e0e0e;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        @include transform(rotate(-90deg));
+        @extend .ft-theme-default;
+        font-weight: 700;
+        svg {
+            fill: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            overflow: visible;
+            width: 120px;
+            height: 120px;
+
+            text {
+                letter-spacing: inherit;
+                fill: $secondary_color;
+            }
+            textPath {
+                &:after {
+                    content: "";
+                    fill: $primary_color;
+                    display: inline-block;
+                    width: 5px;
+                    height: 5px;
+                    @include border-radius(5px);
+                }
+            }
+
+        }
+    }
+    .ct-banner-inner {
+        position: relative;
+        padding-top: 35px;
+        padding-left: 35px;
+    }
+}

@@ -1,0 +1,130 @@
+.pxl-accordion {
+    .pxl-item-accordion {
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+    .pxl-item--content-acc {
+        display: none;
+    }
+    .fa-chevron-double-right {
+        font-style: normal;
+    }
+}
+.pxl-accordion1 {
+    &.style1 {
+        .pxl-item-accordion {
+            font-size: 18px;
+            color: $secondary-color;
+            position: relative;
+            background-color: #f2f2f2;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px; 
+            @extend .ft-lato;
+            padding: 25px 80px 25px 25px;
+            width: 100%;
+        }
+        .fa-chevron-double-right {
+            background-color: $secondary-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            display: flex;
+            width: 70px;
+            font-size: 13px;
+            justify-content: center;
+            color: #fff;
+            @include transition(300ms all linear 0ms);
+            align-items: center;
+            background-image: url(../img/bg-icon-acc2.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .pxl-item--content-acc {
+            color: $secondary-color;
+            line-height: 1.75;
+            margin-bottom: 27px;
+            padding: 0 80px 0 25px;
+            @media #{$max-lg} {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .pxl--item {
+            margin-bottom: 12px;
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            &.active .fa-chevron-double-right:before {
+                @include transform(rotate(90deg));
+            }
+            &.active .fa-chevron-double-right {
+                background-image: url(../img/bg-icon-acc.png); 
+            }
+        }
+    }
+
+}
+.pxl-accordion2 {
+    &.style1 {
+        .pxl-item-accordion {
+            @include transition(300ms all linear 0ms);
+            font-size: 18px;
+            color: $secondary-color;
+            position: relative;
+            font-weight: 700;
+            line-height: 1.3;
+            padding: 20px 80px 19px 45px;
+            @media #{$max-lg} {
+                padding: 20px 80px 10px 10px !important;
+            }
+            width: 100%;
+        }
+        i {
+            position: absolute;
+            top: 0;
+            right: 8px;
+            height: 100%;
+            display: flex;
+            width: 70px;
+            font-size: 20px;
+            justify-content: center;
+            color: $primary_color;
+            @include transition(300ms all linear 0ms);
+            align-items: center;
+        }
+        .pxl-item--content-acc {
+            color: $secondary-color;
+            line-height: 1.75;
+            margin-bottom: 27px;
+            padding: 0 80px 0 45px;
+            @media #{$max-lg} {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .pxl--item {
+            margin-bottom: 18px;
+            border: 1px solid #efefef;
+            &:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            &.active i {
+                @include transform(rotatex(180deg));
+            }
+            &.active {
+                background-color: #f9fafc;
+                .pxl-item-accordion {
+                    padding: 23px 80px 8px 45px;
+                    @media #{$max-lg} {
+                        padding: 20px 80px 10px 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}

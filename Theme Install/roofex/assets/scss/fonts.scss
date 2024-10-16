@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/font-theme/Playfair Display-Regular.ttf') format('ttf'),
+    url('../fonts/font-theme/Playfair Display-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/font-theme/Lato-Italic-VariableFont_wght.ttf') format('ttf'),
+    url('../fonts/font-theme/Lato-VariableFont_wght.ttf') format('ttf');
+    
+}
+
+
+@font-face {
+    font-family: 'GT Walshei Pro';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/font-theme/GT-Walsheim-Pro-Regular-Regular.ttf') format('ttf'),
+    url('../fonts/font-theme/GT-Walsheim-Pro-Regular-Regular.ttf') format('ttf');
+    
+}
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/walsheim/GTWalsheimPro-Light.woff2') format('woff2'),
+    url('../fonts/walsheim/GTWalsheimPro-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/walsheim/GTWalsheimPro-Regular.woff2') format('woff2'),
+    url('../fonts/walsheim/GTWalsheimPro-Regular.woff') format('woff');
+    
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/walsheim/GTWalsheimPro-Medium.woff2') format('woff2'),
+    url('../fonts/walsheim/GTWalsheimPro-Medium.woff') format('woff');
+    
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/walsheim/GTWalsheimPro-Bold.woff2') format('woff2'),
+    url('../fonts/walsheim/GTWalsheimPro-Bold.woff') format('woff');
+    
+}
+
+.ft-playfair-display {
+    font-family: 'Playfair Display' !important;
+}
+.ft-lato {
+    font-family: 'Lato' !important;
+}
+.ft-inter {
+    font-family: 'Inter' !important;
+}
+.ft-rubik {
+    font-family: 'Rubik' !important;
+}
+.ft-poppins {
+    font-family: 'Poppins' !important;
+}
+.ft-walsheim {
+    font-family: 'GT Walsheim Pro' !important;
+}

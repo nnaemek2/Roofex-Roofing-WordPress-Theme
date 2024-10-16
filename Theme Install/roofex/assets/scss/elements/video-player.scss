@@ -1,0 +1,230 @@
+.pxl-video-player {
+    .btn-video {
+        z-index: 2;
+    }
+    .pxl-box--icon {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 54px;
+        right: 95px;
+        background-color: #ffde19;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 38px;
+        color: #000010;
+        @media #{$max-lg} {
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            bottom: 30px;
+            right: 40px;
+        }
+        @media #{$max-sm} {
+            bottom: 20px;
+            right: 20px;
+        }
+        i {
+            @extend .pxl-middle;
+        }
+    }
+}
+.pxl-video-player1 {
+    .pxl-shadow-gradient {
+        width: 240px;
+        height: 240px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+        @include background-horizontal($gradient_color_from, $gradient_color_to);
+        filter: blur(40px);
+        @include border-radius(100%);
+        display: none;
+        @media #{$max-sm} {
+            width: 120px;
+            height: 120px;
+            filter: blur(22px);
+        }
+    }
+    .pxl-video--holder {
+        img, .pxl-video--imagebg {
+            @include border-radius(8px);
+        }
+        + .btn-video-wrap {
+            position: absolute;
+            z-index: 99;
+            text-align: center;
+            &.p-center {
+                top: 50%;
+                left: 50%;
+                @include transform(translate(-50%, -50%));
+            }
+        }
+    }
+    .pxl-video-text {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fefeff;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+        @extend .ft-theme-default;
+        width: 100%;
+        display: block;
+        margin-top: 24px;
+    }
+    .btn-video {
+        position: relative;
+        i {
+            display: inline-flex;
+            @extend .pxl-middle;
+        }
+        &.style1 { 
+            font-size: 17px;
+            width: 137px;
+            height: 137px;
+            @media #{$max-sm} {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                font-size: 15px;
+            }
+        }
+        &.style2 {
+            font-size: 18px;
+            width: 120px;
+            height: 120px;
+            color: $primary_color;
+            @include transition(250ms all linear 0ms);
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                animation: scale-border 3s linear infinite;
+                border: 0.3px solid #fff;
+                background-color: transparent !important;
+                border-radius: 500px;
+                opacity: 0;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                animation: scale-border 3s 1.5s linear infinite;
+                background-color: transparent !important;
+                border: 0.3px solid #fff;
+                border-radius: 500px;
+                opacity: 0;
+            }
+            &:hover {
+                transform:scale(.9);
+            }
+        }
+        &.style3,&.style5 {
+            font-size: 16px;
+            width: 69px;
+            height: 69px;
+            color: #fff;
+            @include transition(250ms all linear 0ms);
+            background-color: $primary_color;
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                animation: scale-border2 3s linear infinite;
+                border: 0.3px solid $primary_color;
+                background-color: transparent !important;
+                border-radius: 500px;
+                opacity: 0;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                animation: scale-border2 3s 1.5s linear infinite;
+                background-color: transparent !important;
+                border: 0.3px solid $primary_color;
+                border-radius: 500px;
+                opacity: 0;
+            }
+        }
+        &.style5 {
+            @include transition(250ms all linear 0ms);
+            background-image: linear-gradient(90deg, #29b430 0%, #b0f006 100%) ;
+            &:before {
+                inset: 0;
+                border-radius: 150px; 
+                background:linear-gradient(45deg,#29b430,#b0f006); 
+                padding: 0px;
+                border-color: transparent;
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude; 
+            }
+            &:after {
+                inset: 0;
+                border-radius: 150px; 
+                background:linear-gradient(45deg,#29b430,#b0f006); 
+                padding: 0px;
+                border-color: transparent;
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude; 
+            }
+        }
+        &.style4 {
+            font-size: 16px;
+            width: 110px;
+            height: 100px;
+            color: #fff;
+            @include transition(250ms all linear 0ms);
+            background-color: #fff;
+            border-radius: 3px;
+            &:after {
+                position: absolute;
+                content: '';
+                border: 2px solid $primary_color;
+                border-radius: 100px;
+                top: 50%;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                transform:translate(-50%,-50%);
+            }
+            i {
+                line-height: 100px;
+                color: $primary_color;
+                font-size: 23px;
+            }
+            &:hover {
+            }
+        }
+
+        
+    }
+    .pxl-video--inner {
+        position: relative;
+    }
+    &.pxl-video-style1 .pxl-video--holder + .btn-video-wrap .pxl-shadow-gradient {
+        display: block;
+        z-index: -1;
+    }
+    &.pxl-video-style4 .btn-video-wrap {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        align-items: center;
+    }
+}
